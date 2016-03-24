@@ -18,7 +18,7 @@ _sym_db = _symbol_database.Default()
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='proto_defs/sample_payload.proto',
   package='protobufs_test',
-  serialized_pb=_b('\n\x1fproto_defs/sample_payload.proto\x12\x0eprotobufs_test\"e\n\rSamplePayload\x12\x10\n\x08userName\x18\x01 \x02(\t\x12\x0f\n\x07userAge\x18\x02 \x02(\x05\x12\x1b\n\x0crandomString\x18\x03 \x01(\t:\x05\x62lank\x12\x14\n\trandomInt\x18\x04 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x1fproto_defs/sample_payload.proto\x12\x0eprotobufs_test\"e\n\rSamplePayload\x12\x10\n\x08userName\x18\x01 \x02(\t\x12\x0f\n\x07userAge\x18\x02 \x02(\x05\x12\x1b\n\x0crandomString\x18\x03 \x01(\t:\x05\x62lank\x12\x14\n\trandomInt\x18\x04 \x01(\x05:\x01\x30\x42\x03\x90\x01\x01')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -85,4 +85,6 @@ SamplePayload = _reflection.GeneratedProtocolMessageType('SamplePayload', (_mess
 _sym_db.RegisterMessage(SamplePayload)
 
 
+DESCRIPTOR.has_options = True
+DESCRIPTOR._options = _descriptor._ParseOptions(descriptor_pb2.FileOptions(), _b('\220\001\001'))
 # @@protoc_insertion_point(module_scope)
