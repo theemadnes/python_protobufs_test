@@ -5,6 +5,6 @@ message sample_payload {
   required string userName = 1;
   required int32 userAge = 2;
   optional string randomString = 3 [default = 'blank'];
-  optional int32 randomInt = 4 [default = 0;
+  optional int32 randomInt = 4 [default = 0];
 
 }
