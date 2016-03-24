@@ -18,43 +18,43 @@ _sym_db = _symbol_database.Default()
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='proto_defs/sample_payload.proto',
   package='protobufs_test',
-  serialized_pb=_b('\n\x1fproto_defs/sample_payload.proto\x12\x0eprotobufs_test\"f\n\x0esample_payload\x12\x10\n\x08userName\x18\x01 \x02(\t\x12\x0f\n\x07userAge\x18\x02 \x02(\x05\x12\x1b\n\x0crandomString\x18\x03 \x01(\t:\x05\x62lank\x12\x14\n\trandomInt\x18\x04 \x01(\x05:\x01\x30')
+  serialized_pb=_b('\n\x1fproto_defs/sample_payload.proto\x12\x0eprotobufs_test\"e\n\rSamplePayload\x12\x10\n\x08userName\x18\x01 \x02(\t\x12\x0f\n\x07userAge\x18\x02 \x02(\x05\x12\x1b\n\x0crandomString\x18\x03 \x01(\t:\x05\x62lank\x12\x14\n\trandomInt\x18\x04 \x01(\x05:\x01\x30')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
 
-_SAMPLE_PAYLOAD = _descriptor.Descriptor(
-  name='sample_payload',
-  full_name='protobufs_test.sample_payload',
+_SAMPLEPAYLOAD = _descriptor.Descriptor(
+  name='SamplePayload',
+  full_name='protobufs_test.SamplePayload',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='userName', full_name='protobufs_test.sample_payload.userName', index=0,
+      name='userName', full_name='protobufs_test.SamplePayload.userName', index=0,
       number=1, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='userAge', full_name='protobufs_test.sample_payload.userAge', index=1,
+      name='userAge', full_name='protobufs_test.SamplePayload.userAge', index=1,
       number=2, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='randomString', full_name='protobufs_test.sample_payload.randomString', index=2,
+      name='randomString', full_name='protobufs_test.SamplePayload.randomString', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=True, default_value=_b("blank").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='randomInt', full_name='protobufs_test.sample_payload.randomInt', index=3,
+      name='randomInt', full_name='protobufs_test.SamplePayload.randomInt', index=3,
       number=4, type=5, cpp_type=1, label=1,
       has_default_value=True, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -72,17 +72,17 @@ _SAMPLE_PAYLOAD = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=51,
-  serialized_end=153,
+  serialized_end=152,
 )
 
-DESCRIPTOR.message_types_by_name['sample_payload'] = _SAMPLE_PAYLOAD
+DESCRIPTOR.message_types_by_name['SamplePayload'] = _SAMPLEPAYLOAD
 
-sample_payload = _reflection.GeneratedProtocolMessageType('sample_payload', (_message.Message,), dict(
-  DESCRIPTOR = _SAMPLE_PAYLOAD,
+SamplePayload = _reflection.GeneratedProtocolMessageType('SamplePayload', (_message.Message,), dict(
+  DESCRIPTOR = _SAMPLEPAYLOAD,
   __module__ = 'proto_defs.sample_payload_pb2'
-  # @@protoc_insertion_point(class_scope:protobufs_test.sample_payload)
+  # @@protoc_insertion_point(class_scope:protobufs_test.SamplePayload)
   ))
-_sym_db.RegisterMessage(sample_payload)
+_sym_db.RegisterMessage(SamplePayload)
 
 
 # @@protoc_insertion_point(module_scope)

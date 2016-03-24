@@ -1,6 +1,6 @@
 package protobufs_test;
 
-message sample_payload {
+message SamplePayload {
 
   required string userName = 1;
   required int32 userAge = 2;
