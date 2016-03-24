@@ -10,3 +10,8 @@ Learning about ProtoBufs, so idea for this is to create a client & server where 
 }`
 
 The client will send the payload, and the server will print the output to stdout.
+
+Not sure how many of these are needed but I used the following tools:
+- protobufs compiler (via brew on Mac)
+- pip install google
+- pip install protobufs
