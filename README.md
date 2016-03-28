@@ -1,6 +1,6 @@
 ## Testing out ProtoBufs in Python
 
-Learning about ProtoBufs, so idea for this is to create a client & server where the client makes RPCs, serialized by ProtoBufs, to a server. The payload would be modeled in JSON like:
+Learning about ProtoBufs, so idea for this is to create a client & server where the client connects to a socket and sends messages, serialized by ProtoBufs, to a server. The payload would be modeled in JSON like:
 
 `{
   'userName': 'alex',
