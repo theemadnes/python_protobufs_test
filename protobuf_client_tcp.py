@@ -14,7 +14,8 @@ def random_int_generator():
 BUFSIZ = 1024 # bufsize = max receivable at once
 
 SERVER_ADDRESS = ('localhost', 9999)
-client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
 
 messages = [] # empty list to store the messages
 names = ["jack", "jill", "alex", "agnes"]
@@ -28,14 +29,18 @@ for n in names:
 
 reply = ''
 
+client_socket.connect(SERVER_ADDRESS)
+
 for s in messages:
 
     print("Sending: " + str(s))
     print("Raw message: " + s.SerializeToString())
-    client_socket.sendto(s.SerializeToString(), SERVER_ADDRESS) # serialize our message to string
-    reply, server_address = client_socket.recvfrom(BUFSIZ)
+    client_socket.send(s.SerializeToString()) # serialize our message to string
+    reply = client_socket.recv(BUFSIZ)
 
     if not reply:
         break
 
-    print(reply + " from: " + str(server_address))
+    print(reply + " from: " + str(SERVER_ADDRESS))
+
+client_socket.close()

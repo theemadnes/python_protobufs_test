@@ -39,3 +39,5 @@ for s in messages:
         break
 
     print(reply + " from: " + str(server_address))
+
+client_socket.close()
