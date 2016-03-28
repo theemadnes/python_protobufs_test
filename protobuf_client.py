@@ -26,16 +26,6 @@ for n in names:
     payload.randomInt = random_int_generator()
     messages.append(payload)
 
-
-#messages = ["one", "two", "three", "four"]
-'''
-# populate payload values
-payload = sample_payload_pb2.SamplePayload()
-payload.userName = 'myName'
-payload.userAge = 100
-payload.randomString = random_string_generator()
-payload.randomInt = random_int_generator()
-'''
 reply = ''
 
 for s in messages:
